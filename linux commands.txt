@@ -48,3 +48,23 @@ whatis - Find what a command is used for
 top - View active processes live with their system usage
 useradd and usermod - Add new user or change existing users data
 passwd - Create or update passwords for existing users
+
+a=[]
+n=int(input("enter the no. of element in list:"))
+for x in range(0,n):
+    element=input("enter element"+str(x+1)+":")
+    a.append(element)
+    print(a)
+    c=[]
+    count=0
+    b=input("enter the occurrence to remove:")
+    n=int(input("enter the ocurrence to remove:"))
+    for i in a:
+        if(i==b):
+            count=count+1
+        else:
+            c.append(i)
+    if(count==0):
+        print("the number of repetiton is",count)
+        print("Updated list is:",c)
+        print("the distinct element are:",set(a))
