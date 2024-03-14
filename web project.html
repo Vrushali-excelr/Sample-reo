@@ -5,12 +5,8 @@
 <title>Data Platform</title>
 
 <style>
-body{
-    background
-} 
 h1{
    color:black;
-   text-align:center;
 }
 .active{
         background: rgb(255,255,255,0.2);
@@ -32,27 +28,43 @@ h1{
        font-family: Georgia, serif;
       text-align:center;
 }
+a:link{
+       color:red;
+}
+a:visited{
+         color:blue;
+}
+a:hover{
+        color:yellow;
+}
+a:active{
+        color:blanchedalmond;
+        background-color: black;
+}
 </style>
 </head>
 <body>
 <main>
-<h1>Login form</h1>
+<p><abbr title="Indian Railway Stock"><h1>Login form</h1></abbr></p>
 <form action="">
   <div class="active">
   <label for="first_name">First name:</label><br>
-  <input type="text" id="first_name" name="first_name"><br>
+  <input type="text" id="first_name" name="first_name" required><br>
   <label for="last_name">Last name:</label><br>
-  <input type="text" id="last_name" name="last_name"><br>
+  <input type="text" id="last_name" name="last_name" required><br>
   <label for="email">Email ID:</label><br>
-  <input type="email" id="email" name="email"><br>
+  <input type="email" id="email" name="email" required><br>
   <label for="password">Password:</label><br>
-  <input type="password" id="password" name="password"><br>
+  <input type="password" id="password" name="password" required minlength="6"><br>
   <label for="password">Confirm Password</label><br>
-  <input type="password" id="password" name="password"><br>
+  <input type="password" id="password" name="password" required minlength="6"><br>
   <button>Submit</button><br>
    <input type="reset" value="Reset">
   </div>
 </form>
+<nav>
+  <a href="assignment1.html">Click Here After Submit</a>
+</nav>
 </main>
 <footer>@copright</footer>
 </div>
