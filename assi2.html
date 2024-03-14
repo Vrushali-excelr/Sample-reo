@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <div id="grade">
+  <head>
+     <title>Department Login Page</title>
+     <style>
+      h1{
+       font-weight: normal;
+       font-size: 24px;
+       text-shadow: 0px opx 2px rgba(0,0,0, 0.5);
+       margin-bottom: 60px;
+       color:black;
+}
+
+#grade{
+      height:1000px;
+      background-color:#F0F3FA;
+      background-image:linear-gradient(#D5DEEF,#B1C9EF,#8AAEE0);
+}  
+.Login{
+      border: 1px solid black;
+      width: 400px;
+      height: 500px;
+      color: #fff;
+      border-radius: 20px;
+      box-shadow:0px 0px 20px rgba(0,0,0, 0.75);
+      overflow: hidden;
+}
+form{
+     display: block;
+     box-sizing: border-box;
+     padding: 20px;
+     width: 100%;
+     height: 100%;
+     backdrop-filter: brightness(40%);
+     flex-direction: column;
+     display: flex;
+     gap:5px;
+}
+label{
+     color:rgba(255,255,255,0.8);
+     font-size: 10px ;
+     letter-spacing: 1px;
+     padding-left: 10px;
+}
+input{
+     background: rgba(255,255,255,0.3);
+     height: 10px;
+     line-height: 10px;
+     border-radius: 20px;
+     padding: 0px 20px;
+     border: none;
+     margin-bottom: 20px;
+     color:white;
+}
+button{
+      background: rgb(45,26,231);
+      height: 10px;
+      line-height: 10px;
+      border-radius:10px;
+      border: none;
+      margin:10px 0px;
+      box-shadow: 0px 0px 5px rgba(255,255,255,0.3);
+      color: white;
+      font-size: 12px;
+      text-transform: uppercase;
+}
+     </style>
+  </head>
+  <body>
+        <form >
+          <h1> Sign Up</h1>
+              <div class="Login">
+               <label for="user_first_name">First name</label><br>
+                <input type="text" id="user_first_name" name="user_first_name" required><br>
+                <label for="user_last_name">Surname</label><br>
+                <input type="text" id="user_last_name" name="user_last_name" required><br>
+                <label for="user_email">Email</label><br>
+                <input type="email" id="user_email" name="use_email" required><br>
+                <label for="user_password">Password</label><br>
+                <input type="password" id="user_password" name="user_password" required minlength="6"><br>
+                <label for="confirm_password">Confirm Password</label><br>
+                <input type="password" id="confirm_password" name="confirm_password" required minlength="6"><br>
+              <button type="submit" >Signup</button>
+              <button type="reset" >Reset</button>
+          </div>
+  </body>
+  </div>
+</html>
