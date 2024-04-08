@@ -1,0 +1,72 @@
+<!Doctype html>
+<html>
+<div id="grad">
+<head>
+<title>Validation Form</title>
+<style>
+#grad{
+      height:2000px;
+      background-size:cover;
+      background-color:#9a5ffb;
+      background-image:linear-gradient(#9a5ffb,#dfcdfd);
+}  
+#container{
+          border:1px black solid;
+          margin-top: 200px;
+           margin-bottom: 100px;
+            margin-right: 150px;
+            margin-left: 80px;
+          background-color:pink; 
+          padding:50px;
+         font-size:30px;
+}
+</style>
+</head>
+<body>
+<center><h1 style=" color:white;">Form Validation</h1></center>
+<marquee style="color:white;">Please Fill up the form ....</marquee>
+
+<div id="container">
+<form name="appointment" method="post" onsubmit="return doValidate();">
+     <center>
+
+  <center>Name:*<br /> </center>
+      <input type="text" name="requiredname" /><br>
+      <center> Email:*<br /> </center>
+        <input type="text" name="requiredemail" /><br>
+      <center> Phone:*<br /> </center>
+        <input type="text" name="requiredphone" />
+      <br /><br />
+              <input name="submit" type="submit"  value="Book Now" />   
+</center>      
+  </form>
+<script>
+function doValidate()
+{
+if (document.appointment.requiredname.value =="")
+{
+alert("Please put your name");
+document.appointment.requiredname.focus();
+return false;
+}
+var readmail = document.appointment.requiredemail;
+var checkatsymbol = readmail.indexof("@");
+var checkdotsymbol = readmail.lastindexof(".");
+if (readmail.value =="" || checkatsymbol<1)
+{
+alert("Please put the correct email address");
+document.appointment.requiredemail.focus();
+return false;
+}
+if (document.appointment.requiredphone.value =="" )
+{
+alert("Please put your phone");
+document.appointment.requiredphone.focus();
+return false;
+}
+return ( true );
+}
+</script>
+</body>
+</div>
+</html>
